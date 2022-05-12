@@ -36,4 +36,7 @@ i.) No `@` symbol is used to highlight that the type we are using in the functio
 
 ii.) We are copying resource `Jacob()` to a new variable `myJacob` which is not allowed. It must be explicitly moved. Also we are not using the explicit `create` keyword.
 
+So the full refactor would be: 
+```let myJacob <- create Jacob()```
+
 iii.) Again we cannot do a normal return but must use the `<-` move operator which makes it easier for us to keep track of what we are doing with the (potentially) valuable resource.
